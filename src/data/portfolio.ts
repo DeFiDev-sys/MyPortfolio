@@ -13,7 +13,7 @@ export const profile = {
   name: 'Juwon Bowofola',
   title: 'Frontend & Backend Developer | IT Personnel',
   location: 'Umuahia South, Abia State, Nigeria',
-  email: 'juwonbowofola@gmail.com',
+  email: 'jayjaybowofola@gmail.com',
   linkedin: 'https://www.linkedin.com/in/juwon-bowofola-a054b1337',
   github: 'https://github.com/DeFiDev-sys',
   currentPortfolio: 'https://portfolio-latest-gl74.vercel.app',
