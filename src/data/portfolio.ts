@@ -12,7 +12,7 @@ import type {
 export const profile = {
   name: 'Juwon Bowofola',
   title: 'Frontend & Backend Developer | IT Personnel',
-  location: 'Umuahia South, Abia State, Nigeria',
+  location: 'Umuahia North, Abia State, Nigeria',
   email: 'jayjaybowofola@gmail.com',
   linkedin: 'https://www.linkedin.com/in/juwon-bowofola-a054b1337',
   github: 'https://github.com/DeFiDev-sys',
