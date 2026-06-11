@@ -118,7 +118,7 @@ function Contact(): React.JSX.Element {
 
         <button
           type="submit"
-          className="mt-6 w-full rounded-lg bg-gradient-to-r from-primary to-secondary px-6 py-3 font-mono text-sm font-semibold uppercase tracking-wider text-dark shadow-glow-primary transition-transform hover:scale-[1.02]"
+          className="mt-6 w-full rounded-lg bg-linear-to-r from-primary to-secondary px-6 py-3 font-mono text-sm font-semibold uppercase tracking-wider text-dark shadow-glow-primary transition-transform hover:scale-[1.02]"
         >
           {sent ? 'Opening your mail client…' : 'Send Message'}
         </button>
