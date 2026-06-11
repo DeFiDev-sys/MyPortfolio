@@ -10,7 +10,7 @@ import { profile } from './data/portfolio';
 
 function App(): React.JSX.Element {
   return (
-    <>
+    <div className='overflow-x-hidden'>
       <Navbar />
       <main className="relative">
         <Hero />
@@ -30,7 +30,7 @@ function App(): React.JSX.Element {
           &amp; Tailwind CSS.
         </p>
       </footer>
-    </>
+    </div>
   );
 }
 
