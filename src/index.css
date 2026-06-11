@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+@config '../tailwind.config.ts';
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+:root {
+  color-scheme: dark;
+  --primary: #00f5ff;
+  --secondary: #7c3aed;
+  --dark: #050816;
+  --dark-alt: #0d1224;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark);
+  color: #e7ecff;
+  font-family: 'Sora', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* A subtle starfield / grid texture behind everything. */
+#root {
+  position: relative;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(0, 245, 255, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(124, 58, 237, 0.1), transparent 45%);
+}
+
+/* ------------------------------------------------------------------ */
+/* Scrollbar                                                           */
+/* ------------------------------------------------------------------ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--primary), var(--secondary));
+  border-radius: 999px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Selection                                                           */
+/* ------------------------------------------------------------------ */
+::selection {
+  background: rgba(0, 245, 255, 0.3);
+  color: #ffffff;
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities not expressible as single Tailwind classes                */
+/* ------------------------------------------------------------------ */
+.gradient-text {
+  background: linear-gradient(120deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(0, 245, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Reduced motion: kill all non-essential animation                    */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
