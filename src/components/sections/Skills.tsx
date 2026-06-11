@@ -38,7 +38,7 @@ function Skills(): React.JSX.Element {
       </div>
 
       {/* 3D orbit */}
-      <div className="mt-8 h-[420px] w-full sm:h-[520px]">
+      <div className="mt-8 h-105 w-full sm:h-130">
         <Suspense fallback={<CanvasLoader label="Spinning up orbit" />}>
           <SkillsOrbit reducedMotion={reducedMotion} />
         </Suspense>

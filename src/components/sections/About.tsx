@@ -19,7 +19,7 @@ function About(): React.JSX.Element {
     <SectionWrapper id="about">
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         {/* Left: 3D crystal */}
-        <div className="order-2 h-[320px] w-full sm:h-[400px] lg:order-1">
+        <div className="order-2 h-80 w-full sm:h-100 lg:order-1">
           <Suspense fallback={<CanvasLoader label="Loading crystal" />}>
             <CrystalCanvas reducedMotion={reducedMotion} />
           </Suspense>

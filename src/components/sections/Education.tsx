@@ -23,7 +23,7 @@ function Education(): React.JSX.Element {
 
       <div className="mt-12 grid grid-cols-1 items-center gap-8 md:grid-cols-[1fr_1.4fr]">
         {/* 3D graduation cap */}
-        <div className="h-[260px] w-full sm:h-[300px]">
+        <div className="h-65 w-full sm:h-75">
           <Suspense fallback={<CanvasLoader label="Loading cap" />}>
             <GradCapCanvas reducedMotion={reducedMotion} />
           </Suspense>

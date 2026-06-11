@@ -117,7 +117,9 @@ function Hero(): React.JSX.Element {
             </button>
             <a
               href={profile.resume}
-              download
+              download="Juwon_Bowofola_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-glow-secondary rounded-full border px-7 py-3 font-mono text-sm font-semibold uppercase tracking-wider text-white transition-transform hover:scale-105"
             >
               Download CV
